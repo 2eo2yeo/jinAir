@@ -1,3 +1,8 @@
+/********************************
+ *      나의 쿠폰 확인
+ *      @정서령
+ ********************************/
+
 import React, { useEffect } from 'react';
 import { getMyCoupon, applyCoupon  } from '../../service/myinfoApi.js';
 import { useDispatch, useSelector } from "react-redux";
@@ -16,7 +21,7 @@ export default function MyCoupon() {
         dispatch(getMyCoupon());
     }, [])
 
-    /* 해당 쿠폰 사용 버튼 */
+    /* 해당 쿠폰 사용 버튼 - 테스트 */
     // const handleUseCoupon = (couponCode) => {
     //     dispatch(applyCoupon(couponCode));
     // };

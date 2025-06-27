@@ -1,3 +1,9 @@
+/********************************
+ *      회원정보 수정 페이지
+ *      @정서령
+ ********************************/
+
+
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import MypageNavigation from '../../component/mypage/MypageNavigation.jsx';

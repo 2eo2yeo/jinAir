@@ -1,3 +1,8 @@
+/********************************
+ *      나의 QnA 확인
+ *      @정서령
+ ********************************/
+
 import React, { useEffect, useState } from 'react';
 import MypageNavigation from '../../component/mypage/MypageNavigation.jsx';
 import '../../scss/ryeong.scss';

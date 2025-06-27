@@ -1,3 +1,8 @@
+/********************************
+ *      마이페이지 상단 네비게이션
+ *      @정서령
+ ********************************/
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 

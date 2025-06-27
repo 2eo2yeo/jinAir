@@ -1,3 +1,8 @@
+/********************************
+ *      비밀번호 변경 대조
+ *      @정서령
+ ********************************/
+
 import React, { useState } from 'react';
 import { axiosPost } from '../../service/api';
 

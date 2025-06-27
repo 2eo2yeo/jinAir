@@ -1,3 +1,8 @@
+/********************************
+ *      탑승권 메일 발송
+ *      @정서령
+ ********************************/
+
 import { useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 

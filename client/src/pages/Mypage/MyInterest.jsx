@@ -1,3 +1,8 @@
+/********************************
+ *      나의 체크인 조회 페이지
+ *      @정서령
+ ********************************/
+
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import MypageNavigation from '../../component/mypage/MypageNavigation.jsx';

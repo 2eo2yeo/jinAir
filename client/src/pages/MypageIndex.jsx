@@ -1,3 +1,8 @@
+/********************************
+ *      마이페이지 첫화면
+ *      @정서령
+ ********************************/
+
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import '../scss/ryeong.scss';

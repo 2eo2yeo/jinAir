@@ -1,3 +1,7 @@
+/********************************
+ *      @정서령
+ ********************************/
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
