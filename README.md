@@ -18,6 +18,7 @@
 <br>
 
 ### 🙋‍♀️ 팀구성
+![image](https://github.com/user-attachments/assets/d2cb9ba0-bdb9-4f55-9d5c-ce446796b48f)
 
 <br>
 
