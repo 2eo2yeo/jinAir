@@ -69,7 +69,6 @@ export default function Notice() {
     return (
         <div className='r-common mp-container'>
             <div className='mp-content'>
-                <MypageNavigation />
                 <span className='notice-title'>공지사항</span>
             </div>
             <div className='notice-table'>

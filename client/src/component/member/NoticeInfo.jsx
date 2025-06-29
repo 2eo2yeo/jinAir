@@ -19,7 +19,7 @@ export default function NoticeInfo() {
   return (
     <div className='r-common mp-container'>
       <div className='mp-content'>
-          <MypageNavigation />
+          {/* <MypageNavigation /> */}
           <span className='notice-title'>공지사항</span>
       </div>
       <div className='admin-noticeUpload-all-box notice-info-box'>

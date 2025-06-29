@@ -141,7 +141,7 @@ export default function Login() {
     window.open(NAVER_AUTH_URL, 'naverLogin', 'width=500,height=600');
   };
   const openKakaoPopup = () => {
-    const REST_API_KEY = '3f5c49e05800584ba496c54e74152ab3';
+    const REST_API_KEY = '6cae78a478c9f448f6c4481db1ea99e4';
     const REDIRECT_URI = 'http://localhost:3000/kakao-redirect';
   
     const kakaoAuthUrl = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${REST_API_KEY}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}`;
