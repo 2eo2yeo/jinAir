@@ -57,7 +57,7 @@ export default function MypageIndex() {
                         <article className='user-info-col'>
                             <span>
                                 {myinfo.profile_img?.[0] ? (
-                                    <img src={`http://localhost:9000${myinfo.profile_img[0]}`} />
+                                    <img src={`http://localhost:9000/${myinfo.profile_img[0]}`} />
                                 ) : (
                                     <div className="default-profile-img" />
                                 )}

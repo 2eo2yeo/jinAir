@@ -84,7 +84,7 @@ export default function CustomTicket() {
                     <div className='user-info-detail' >
                         <div>
                             {myinfo.profile_img?.[0] ? (
-                                <img src={`http://localhost:9000${myinfo.profile_img[0]}`} />
+                                <img src={`http://localhost:9000/${myinfo.profile_img[0]}`} />
                             ) : (
                                 <div className="default-profile-img" />
                             )}

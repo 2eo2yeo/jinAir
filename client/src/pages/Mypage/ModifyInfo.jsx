@@ -162,7 +162,7 @@ export default function ModifyInfo() {
                         <b>프로필 사진</b>
                         <div className='profile-img'>
                             {myinfo.profile_img?.[0] ? (
-                                <img src={`http://localhost:9000${myinfo.profile_img[0]}`} />
+                                <img src={`http://localhost:9000/${myinfo.profile_img[0]}`} />
                             ) : (
                                 <div className="default-profile-img" />
                             )}

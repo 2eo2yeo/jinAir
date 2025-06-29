@@ -16,7 +16,7 @@ import {
 
 // 회원 정보 불러오기
 export const getMyInfo = (data) => async (dispatch) => {
-    const url = 'http://localhost:9000mypage/getMyInfo';
+    const url = 'http://localhost:9000/mypage/getMyInfo';
     const id = localStorage.getItem("user_id");
 
     const getMyInfoResult = await axiosPost({ url, data: { id } });
@@ -34,7 +34,7 @@ export const getMyInfo = (data) => async (dispatch) => {
 
 // 회원정보 업데이트
 export const updateMyInfo = (formData) => async (dispatch) => {
-    const url = 'http://localhost:9000mypage/updateMyInfo';
+    const url = 'http://localhost:9000/mypage/updateMyInfo';
     const result = await axiosPost({ url, data: formData });
     if (result.success) {
         dispatch(setMyInfo(result.updatedInfo));
@@ -45,7 +45,7 @@ export const updateMyInfo = (formData) => async (dispatch) => {
 // 관심지역 저장
 
 export const updateInterest = (checkList) => async (dispatch) => {
-    const url = 'http://localhost:9000mypage/updateInterest';
+    const url = 'http://localhost:9000/mypage/updateInterest';
     const id = localStorage.getItem("user_id");
 
     const result = await axiosPost({ url, data: { id, checkList } });
@@ -56,7 +56,7 @@ export const updateInterest = (checkList) => async (dispatch) => {
 
 // 관심지역 불러오기
 export const getInterest = () => async (dispatch) => {
-    const url = 'http://localhost:9000mypage/getInterest';
+    const url = 'http://localhost:9000/mypage/getInterest';
     const id = localStorage.getItem("user_id");
 
     const result = await axiosPost({ url, data: { id } });
@@ -71,7 +71,7 @@ export const getInterest = () => async (dispatch) => {
 
 // 나의 사용가능 쿠폰 불러오기
 export const getMyCoupon = () => async (dispatch) => {
-    const url = 'http://localhost:9000mypage/getMyCoupon';
+    const url = 'http://localhost:9000/mypage/getMyCoupon';
     const id = localStorage.getItem("user_id");
 
     const result = await axiosPost({ url, data: { id } });
@@ -83,7 +83,7 @@ export const getMyCoupon = () => async (dispatch) => {
 
 // 나의 쿠폰 카운트
 export const couponCount = () => async (dispatch) => {
-    const url = 'http://localhost:9000mypage/couponCount';
+    const url = 'http://localhost:9000/mypage/couponCount';
     const id = localStorage.getItem("user_id");
 
     const result = await axiosPost({ url, data: { id } });
@@ -99,7 +99,7 @@ export const couponCount = () => async (dispatch) => {
 // 쿠폰 하나만 적용하여 사용하는 로직으로 쿠폰 2개 이상 선택할 시에는 리듀서 추가해야함
 
 // export const applyCoupon = (couponCode) => async (dispatch) => {
-//     const url = 'http://localhost:9000mypage/applyCoupon';
+//     const url = 'http://localhost:9000/mypage/applyCoupon';
 //     const id = localStorage.getItem("user_id");
   
 //     const result = await axiosPost({ url, data: { id, couponCode } });
@@ -110,7 +110,7 @@ export const couponCount = () => async (dispatch) => {
 //   };
   
 export const applyCoupon = (couponCode) => async (dispatch) => {
-    const url = 'http://localhost:9000mypage/applyCoupon';
+    const url = 'http://localhost:9000/mypage/applyCoupon';
     const id = localStorage.getItem("user_id");
   
     const result = await axiosPost({ url, data: { id, couponCode } });
@@ -119,7 +119,7 @@ export const applyCoupon = (couponCode) => async (dispatch) => {
       dispatch(setCouponCount(result[0].coupon_count));
   
       // 쿠폰 다시 불러오기
-      const refreshUrl = 'http://localhost:9000mypage/getMyCoupon';
+      const refreshUrl = 'http://localhost:9000/mypage/getMyCoupon';
       const refreshResult = await axiosPost({ url: refreshUrl, data: { id } });
   
       if (refreshResult) {
@@ -132,7 +132,7 @@ export const applyCoupon = (couponCode) => async (dispatch) => {
   // 맞춤 항공권 정보 (테마별)
 
 export const customTheme = (category) => async (dispatch) => {
-    const url = 'http://localhost:9000mypage/customTheme';
+    const url = 'http://localhost:9000/mypage/customTheme';
     const result = await axiosPost({ url, data: { category } });
     if (result) dispatch(setCustomTheme(result));
   };
@@ -141,7 +141,7 @@ export const customTheme = (category) => async (dispatch) => {
   // 맞춤 항공권 정보 (유저 설정 관심지역)
   export const customArea = async () => {
     const id = localStorage.getItem('user_id');
-    const url = 'http://localhost:9000mypage/customArea';
+    const url = 'http://localhost:9000/mypage/customArea';
 
     const result = await axiosPost({ url, data: { id } });
     return result;

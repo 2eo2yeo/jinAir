@@ -87,7 +87,7 @@ export const flight = async (flightNumber) => {
 /***************************
  * lowest 조회
  ***************************/
-export const getLowestPricesByDate = async (conn) => {
+export const getLowestPricesByDate = async () => {
   const sql = `
     WITH RankedFlights AS (
   SELECT 
@@ -110,6 +110,6 @@ ORDER BY
   flight_date ASC;
 
   `;
-  const [rows] = await conn.query(sql);
+  const [rows] = await db.execute(sql);
   return rows;
 };
